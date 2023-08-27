@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
- 
+
   const [showResults, setShowResults] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -73,7 +73,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>USA Quiz 🇺🇸</h1>
+      <h1>USA Quiz</h1>
       <h2>Score: {score}</h2>
       {showResults ? (
         <div className="final-results">
