@@ -9,48 +9,48 @@ function App() {
 
   const questions = [
     {
-      text: "What is the capital of America?",
+      text: "Which of the following is used in React.js to increase performance?",
       options: [
-        { id: 0, text: "New York City", isCorrect: false },
-        { id: 1, text: "Boston", isCorrect: false },
-        { id: 2, text: "Santa Fe", isCorrect: false },
-        { id: 3, text: "Washington DC", isCorrect: true },
+        { id: 0, text: "Virtual DOM", isCorrect: true },
+        { id: 1, text: "Original DOM", isCorrect: false },
+        { id: 2, text: "Both Virtual and Original DOM", isCorrect: false },
+        { id: 3, text: "None of these", isCorrect: false },
       ],
     },
     {
-      text: "What year was the Constitution of America written?",
+      text: "What is ReactJS?",
       options: [
-        { id: 0, text: "1787", isCorrect: true },
-        { id: 1, text: "1776", isCorrect: false },
-        { id: 2, text: "1774", isCorrect: false },
-        { id: 3, text: "1826", isCorrect: false },
+        { id: 0, text: "Server Side framework", isCorrect: false },
+        { id: 1, text: "User interface framework", isCorrect: true },
+        { id: 2, text: "Both of the above", isCorrect: false },
+        { id: 3, text: "None of these", isCorrect: false },
       ],
     },
     {
-      text: "Who was the second president of the US?",
+      text: "Identify the one which is used to pass data to components from outside?",
       options: [
-        { id: 0, text: "John Adams", isCorrect: true },
-        { id: 1, text: "Paul Revere", isCorrect: false },
-        { id: 2, text: "Thomas Jefferson", isCorrect: false },
-        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+        { id: 0, text: "Render with arguments", isCorrect: false },
+        { id: 1, text: "setState", isCorrect: false },
+        { id: 2, text: "PropTypes", isCorrect: false },
+        { id: 3, text: "props", isCorrect: true },
       ],
     },
     {
-      text: "What is the largest state in the US?",
+      text: "Who created React.js?",
       options: [
-        { id: 0, text: "California", isCorrect: false },
-        { id: 1, text: "Alaska", isCorrect: true },
-        { id: 2, text: "Texas", isCorrect: false },
-        { id: 3, text: "Montana", isCorrect: false },
+        { id: 0, text: "Jordan Mike", isCorrect: false },
+        { id: 1, text: "Jordan Walke", isCorrect: true },
+        { id: 2, text: "Tim Lee", isCorrect: false },
+        { id: 3, text: "Jordan Lee", isCorrect: false },
       ],
     },
     {
-      text: "Which of the following countries DO NOT border the US?",
+      text: "In which language is React.js written?",
       options: [
-        { id: 0, text: "Canada", isCorrect: false },
-        { id: 1, text: "Russia", isCorrect: true },
-        { id: 2, text: "Cuba", isCorrect: true },
-        { id: 3, text: "Mexico", isCorrect: false },
+        { id: 0, text: "Python", isCorrect: false },
+        { id: 1, text: "JavaScript", isCorrect: true },
+        { id: 2, text: "Java", isCorrect: false },
+        { id: 3, text: "PHP", isCorrect: false },
       ],
     },
   ];
@@ -73,7 +73,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>USA Quiz</h1>
+      <h1>ReactJs Quiz</h1>
       <h2>Score: {score}</h2>
       {showResults ? (
         <div className="final-results">
